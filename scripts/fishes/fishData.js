@@ -19,7 +19,7 @@ const fishCollection = [
     },
     {
         species: "Shark",
-        length: 25,
+        length: 27,
         location: "Florida",
         saltwater: true,
         image: "shark.jpg",
@@ -48,4 +48,38 @@ const fishCollection = [
 
 export const getFish = () => {
     return fishCollection
+}
+
+// filter the array to return fishes whose length is in multiple of 3
+export const getMostHolyFish = () => {
+    let holyFishes = []
+    fishCollection.forEach(fish => {
+        if (fish.length % 3 === 0) {
+            holyFishes.push(fish)
+        }
+    });
+    return holyFishes
+}
+
+// filter the array to return fishes whose length is in multiple of 5
+export const getSoldierFish = () => {
+    let soldierFishes = []
+    fishCollection.forEach(fish => {
+        if (fish.length % 5 === 0) {
+            soldierFishes.push(fish)
+        }
+    });
+    return soldierFishes
+}
+
+// fishes that don't have length in multiples of 3 or 5 are unworthy
+export const getUnworthyFish = () => {
+    let unworthyFishes = []
+    fishCollection.forEach(fish => {
+        if (fish.length % 3 !== 0 && 
+            fish.length % 5 !== 0) {
+                unworthyFishes.push(fish)
+            }
+    });
+    return unworthyFishes
 }

@@ -1,4 +1,4 @@
-import { getFish } from "./fishes/fishData.js";
+import { getFish, getMostHolyFish, getSoldierFish, getUnworthyFish } from "./fishes/fishData.js";
 import { fish } from "./fishes/fish.js"
 import { fishList } from "./fishes/fishList.js"
 import { tipList } from "./tips/tipList.js";
@@ -18,3 +18,12 @@ for (const eachFish of allTheFish) {
 fishList()
 tipList()   
 locationList()
+
+// log array of fishes whose length is in multiples of 3
+console.log(getMostHolyFish());
+
+// log array of fishes whose length is in multiples of 5
+console.log(getSoldierFish());
+
+// log array of fishes whose length is neither in multiples of 3 or 5
+console.log(getUnworthyFish());
