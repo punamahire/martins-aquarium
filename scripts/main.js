@@ -14,11 +14,6 @@ for (const eachFish of allTheFish) {
     console.log(articleString)
 }
 
-// invoke fishList() -> getFish() -> fish() 
-fishList()
-tipList()   
-locationList()
-
 // log array of fishes whose length is in multiples of 3
 console.log(getMostHolyFish());
 
@@ -27,3 +22,7 @@ console.log(getSoldierFish());
 
 // log array of fishes whose length is neither in multiples of 3 or 5
 console.log(getUnworthyFish());
+
+fishList() // invoke fishList() -> getFish() -> fish() 
+tipList()   
+locationList()

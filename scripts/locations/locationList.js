@@ -25,7 +25,5 @@
          // Set the dom equal to the variable containing the location html representations
          // Add to the existing HTML in the content element
          contentElement.innerHTML += `${locationHTMLRepresentation}`
-         
-         // return contentElement
      }
  }
